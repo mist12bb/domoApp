@@ -36,7 +36,7 @@ app.post("/get", (req, res)=>{
     })
     res.redirect("/")
 });
-app.listen(port = 1234, ()=>{
+app.listen(process.env.PORT || 3222, ()=>{
     console.log("http://localhost:"+port);
     
 })
